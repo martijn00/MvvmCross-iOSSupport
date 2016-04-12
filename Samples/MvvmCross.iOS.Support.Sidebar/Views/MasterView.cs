@@ -1,4 +1,5 @@
 ﻿using MvvmCross.iOS.Support.SidePanels;
+using MvvmCross.iOS.Support.XamarinSidebar;
 
 namespace MvvmCross.iOS.Support.iOS.Views
 {
@@ -9,7 +10,7 @@ namespace MvvmCross.iOS.Support.iOS.Views
     using UIKit;
 
     [Register("MasterView")]
-    [MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.ActivePanel, true, MvxSplitViewBehaviour.Master)]
+    [MvxPanelPresentation(MvxPanelEnum.Center, MvxPanelHintType.PopToRoot, true, MvxSplitViewBehaviour.Master)]
     public class MasterView : BaseViewController<MasterViewModel>
     {
         /// <summary>
